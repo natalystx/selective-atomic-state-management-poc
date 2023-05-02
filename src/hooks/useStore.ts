@@ -1,7 +1,6 @@
 import { createStateHook } from "./createStateHooks";
 
 const states = new Map<string, () => [any, (val: any) => void]>();
-const lastValues = new Map<string, any>();
 
 export const useStore = () => {
   const useStateSelector = <T>(
